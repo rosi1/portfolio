@@ -36,3 +36,34 @@
     transform: rotate(360deg);
   }
 }
+
+.logo{
+  width: 2.25rem;
+}
+nav a.nav-link{
+  font-weight: 500;
+  letter-spacing: 0.035;
+  cursor: pointer;
+}
+
+nav ul li{
+  text-transform: uppercase;
+}
+.navbar-brand{
+  width: 17.25rem;
+  padding: 0 !important;
+  /* height:6rem !important; */
+}
+
+.navbar-nav > li > a{
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  border-top: 0.1875rem solid rgb(252, 246, 246);
+}
+.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus{
+  border-top: 0.1875rem solid rgb(61, 130, 54);
+}
+
+ .navbar-nav > li > a:hover{
+  border-top: 0.1875rem solid rgb(61, 130, 54);
+}
