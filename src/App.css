@@ -136,3 +136,33 @@ nav ul li{
   }
 
 }
+/* ************************ABOUT ME************************************** */
+.photo-wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img{
+  width:16rem;
+  border-radius: 50%;
+  padding:.3rem;
+  border: 1px solid #c5796d;
+}
+
+.about-heading{
+  color: #c5796d;
+  text-transform: uppercase;
+}
+
+p{
+  font-size:18px;
+  font-weight:bold;
+}
+
+@media(max-width:468px){
+  .profile-img{
+    width:10rem;
+  }
+ 
+}
