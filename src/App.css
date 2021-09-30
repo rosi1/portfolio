@@ -223,3 +223,74 @@ p{
   color:rgb(81, 133, 135);
   font-weight: 900;
 }
+/* ************************PORTFOLIO************************************** */
+.portfolio-wrapper {
+  background: lightgrey;
+  padding: 3rem 0;
+}
+.portfolio-wrapper h1 {
+  color:#c5796d;
+}
+.portfolio-image{
+  width:25rem;
+  border: 1px solid #c5796d;
+  padding:0.5rem;
+}
+.portfolio-image-box{
+  position:relative;
+  margin:1rem;
+}
+/* ************************overflow************************************** */
+.overflow{
+  position:absolute;
+  opacity: 0;
+  background:#282c34;
+  width: 25rem;
+  height: 13rem;
+  top: 0;
+  border: 1px solid #c5796d;
+  cursor: pointer;
+}
+.portfolio-image-box:hover .overflow{
+  opacity: 60%;
+  transition: 0.3s ease-in-out;
+}
+.portfolio-icon{
+  position:absolute;
+  opacity: 0;
+  margin-left: -13rem;
+  margin-top: 4.6rem;
+  color: #d1867b;
+  font-size: 1.5rem;
+}
+.portfolio-image-box:hover .portfolio-icon{
+  opacity: 70%;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+/* **************************OVERFLOW BOX************************************ */
+.portfolio-image-popupbox{
+  width: 45rem;
+  padding:0 0.5rem;
+}
+.hyper-link{
+  cursor: pointer;
+}
+.hyper-link:hover{
+  color: #c5796d;
+}
+@media(max-width:768px){
+  .portfolio-image-popupbox{
+    width: 100%;
+  }
+}
+
+@media(max-height:500px){
+  .popupbox-wrapper{
+    height: 100%;
+  }
+  .portfolio-image-popupbox{
+    width: 70%;
+  }
+}
