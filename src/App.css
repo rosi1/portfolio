@@ -144,8 +144,9 @@ nav ul li{
 }
 
 .profile-img{
-  width:16rem;
+  width: 250px;
   border-radius: 50%;
+  height:280px;
   padding:.3rem;
   border: 1px solid #c5796d;
 }
@@ -162,7 +163,63 @@ p{
 
 @media(max-width:468px){
   .profile-img{
-    width:10rem;
+    width: 120px;;
+    height:150px;
   }
  
+}
+/* ************************EXPERIENCE************************************** */
+
+.experience-wraper{
+  position: relative;
+  padding:3.125rem;
+  overflow: hidden;
+}
+.experience h1{
+  text-transform: uppercase;
+  color:#c5796d;
+}
+.experience-wraper::before{
+  position: absolute;
+  content:"";
+  top: 0;
+  left: 50%;
+  margin-left: -0.0625rem;
+  width:0.125rem;
+  height:100%;
+  background:rgb(81, 133, 135);
+  z-index: 1;
+}
+.timeline-block{
+  width: calc(50% + 0.5rem);
+  display: flex;
+  justify-content: space-between;
+  clear: both;
+}
+.timeline-block-right{
+  float: right;
+}
+.timeline-block-left{
+  float: left;
+  direction: rtl;
+}
+.marker{
+  width:1rem;
+  height:1rem;
+  border-radius: 50%;
+  border:0.312rem solid #c5796d;
+  background:#f0f1f1;
+  margin-top: 0.625rem;
+  z-index: 3;
+}
+.timeline-content{
+  width:95%;
+  padding:0 0.9375rem;
+  /* color:#293e44; */
+  direction: ltr;
+}
+.timeline-content h3{
+  margin-top:0.3125rem;
+  color:rgb(81, 133, 135);
+  font-weight: 900;
 }
