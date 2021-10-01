@@ -1,9 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
-
-body{
-  font-family: "Roboto Condensed",sans-serif;
-}
-
 .App {
   text-align: center;
 }
@@ -79,7 +73,7 @@ nav ul li{
   border-top: 0.1875rem solid rgb(252, 246, 246);
 }
 
-.navbar-nav > li > a.active, .navbar-nav > li > a:focus{
+.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus{
   border-top: 0.1875rem solid #c5796d;
 }
 
@@ -87,13 +81,12 @@ nav ul li{
   border-top: 0.1875rem solid #c5796d;
 }
 
-/* *******************************HEADER******************************* */
 .header-wraper{
   position: relative;
   background: url(Jaipur.jpg) no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 90vh;
 }
 .main-info{
   display: flex;
@@ -109,7 +102,7 @@ nav ul li{
   z-index: 1;
 }
 .main-info h1{
-  color:rgb(108, 28, 61);
+  color:antiquewhite;
 }
 
 .typed-text{
@@ -142,213 +135,4 @@ nav ul li{
     display: none;
   }
 
-}
-/* ************************ABOUT ME************************************** */
-
-.photo-wrap{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-}
-
-.profile-img{
-  width: 250px;
-  border-radius: 50%;
-  height:280px;
-  padding:.3rem;
-  border: 1px solid #c5796d;
-}
-
-.about-heading{
-  color: rgb(108, 28, 61);
-  text-transform: uppercase;
-}
-
-p{
-  font-size:18px;
-  font-weight:bold;
-}
-
-@media(max-width:468px){
-  .profile-img{
-    width: 120px;;
-    height:150px;
-  }
- 
-}
-/* ************************EXPERIENCE************************************** */
-/* .experience-wrapper{
-  background:rgb(184, 189, 191);
-} */
-.experience-wraper{
-  position: relative;
-  padding:3.125rem;
-  overflow: hidden;
-  
-}
-.experience h1{
-  text-transform: uppercase;
-  color:rgb(108, 28, 61);
-}
-.experience-wraper::before{
-  position: absolute;
-  content:"";
-  top: 0;
-  left: 50%;
-  margin-left: -0.0625rem;
-  width:0.125rem;
-  height:100%;
-  background:rgb(108, 28, 61);
-  z-index: 1;
-}
-.timeline-block{
-  width: calc(50% + 0.5rem);
-  display: flex;
-  justify-content: space-between;
-  clear: both;
-}
-.timeline-block-right{
-  float: right;
-}
-.timeline-block-left{
-  float: left;
-  direction: rtl;
-}
-.marker{
-  width:1rem;
-  height:1rem;
-  border-radius: 50%;
-  border:0.312rem solid #c5796d;
-  background:#f0f1f1;
-  margin-top: 0.625rem;
-  z-index: 3;
-}
-.timeline-content{
-  width:95%;
-  padding:0 0.9375rem;
-  /* color:#293e44; */
-  direction: ltr;
-}
-.timeline-content h3{
-  margin-top:0.3125rem;
-  color:rgb(108, 28, 61);
-  font-weight: 800;
-}
-/* ************************PORTFOLIO************************************** */
-.portfolio-wrapper {
-  padding: 3rem 0;
-  height: 50vh;
-}
-.portfolio-wrapper h1 {
-  color:rgb(108, 28, 61);
-}
-.portfolio-image{
-  width:25rem;
-  border: 1px solid #c5796d;
-  padding:0.5rem;
-}
-.portfolio-image-box{
-  position:relative;
-  margin:1rem;
-}
-/* ************************overflow************************************** */
-.overflow{
-  position:absolute;
-  opacity: 0;
-  background:#282c34;
-  width: 25rem;
-  height: 13rem;
-  top: 0;
-  border: 1px solid #c5796d;
-  cursor: pointer;
-}
-.portfolio-image-box:hover .overflow{
-  opacity: 60%;
-  transition: 0.3s ease-in-out;
-}
-.portfolio-icon{
-  position:absolute;
-  opacity: 0;
-  margin-left: -13rem;
-  margin-top: 4.6rem;
-  color: #d1867b;
-  font-size: 1.5rem;
-}
-.portfolio-image-box:hover .portfolio-icon{
-  opacity: 80%;
-  transition: 0.3s ease-in-out;
-  cursor: pointer;
-}
-
-/* **************************OVERFLOW BOX************************************ */
-.portfolio-image-popupbox{
-  width: 45rem;
-  padding:0 0.5rem;
-}
-.hyper-link{
-  cursor: pointer;
-}
-.hyper-link:hover{
-  color: #c5796d;
-}
-@media(max-width:768px){
-  .portfolio-image-popupbox{
-    width: 100%;
-  }
-}
-
-@media(max-height:500px){
-  .popupbox-wrapper{
-    height: 100%;
-  }
-  .portfolio-image-popupbox{
-    width: 70%;
-  }
-}
-
-
-
-@media(max-height:280px){
-  .popupbox-wrapper{
-    height: 90%;
-  }
-  .portfolio-image-popupbox{
-    width: 40%;
-  }
-}
-/* **************************CONTACT************************************ */
-
-.contact-wrapper{
-  height: 50vh;
-}
-
-.contact-header{
-  color: rgb(108, 28, 61);
-}
-.address-icon{
-  /* position:absolute;
-  opacity: 0; */
-  /* margin-left: -13rem;
-  margin-top: 4.6rem; */
- 
-  color: #d1867b;
-  font-size: 2.5rem;
-}
-.phone-icon{
-  /* position:absolute;
-  opacity: 0; */
-  /* margin-left: -13rem;
-  margin-top: 4.6rem; */
-  color: #d1867b;
-  font-size: 2.5rem;
-}
-.email-icon{
-
-  
-  /* opacity: 0; */
-  /* margin-left: -13rem;
-  margin-top: 4.6rem; */
-  color: #d1867b;
-  font-size: 2.5rem;
 }
