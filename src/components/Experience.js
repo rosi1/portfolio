@@ -2,9 +2,9 @@ import React from 'react';
 
 const Experience = () => {
     return (
-        <div className="experience">
+        <div id="experience" className="experience-wrapper">
             <div className="d-flex justify-content-center my-5">
-                <h1>experience</h1>
+                <h1>work experience</h1>
             </div>
             <div className="container experience-wraper">
                 <div className="timeline-block timeline-block-right">

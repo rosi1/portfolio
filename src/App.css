@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+body{
+  font-family: "Roboto Condensed",sans-serif;
+}
+
 .App {
   text-align: center;
 }
@@ -73,7 +79,7 @@ nav ul li{
   border-top: 0.1875rem solid rgb(252, 246, 246);
 }
 
-.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus{
+.navbar-nav > li > a.active, .navbar-nav > li > a:focus{
   border-top: 0.1875rem solid #c5796d;
 }
 
@@ -81,12 +87,13 @@ nav ul li{
   border-top: 0.1875rem solid #c5796d;
 }
 
+/* *******************************HEADER******************************* */
 .header-wraper{
   position: relative;
   background: url(Jaipur.jpg) no-repeat;
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 100vh;
 }
 .main-info{
   display: flex;
@@ -102,7 +109,7 @@ nav ul li{
   z-index: 1;
 }
 .main-info h1{
-  color:antiquewhite;
+  color:rgb(108, 28, 61);
 }
 
 .typed-text{
@@ -137,10 +144,12 @@ nav ul li{
 
 }
 /* ************************ABOUT ME************************************** */
+
 .photo-wrap{
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 .profile-img{
@@ -152,7 +161,7 @@ nav ul li{
 }
 
 .about-heading{
-  color: #c5796d;
+  color: rgb(108, 28, 61);
   text-transform: uppercase;
 }
 
@@ -169,15 +178,18 @@ p{
  
 }
 /* ************************EXPERIENCE************************************** */
-
+/* .experience-wrapper{
+  background:rgb(184, 189, 191);
+} */
 .experience-wraper{
   position: relative;
   padding:3.125rem;
   overflow: hidden;
+  
 }
 .experience h1{
   text-transform: uppercase;
-  color:#c5796d;
+  color:rgb(108, 28, 61);
 }
 .experience-wraper::before{
   position: absolute;
@@ -187,7 +199,7 @@ p{
   margin-left: -0.0625rem;
   width:0.125rem;
   height:100%;
-  background:rgb(81, 133, 135);
+  background:rgb(108, 28, 61);
   z-index: 1;
 }
 .timeline-block{
@@ -220,16 +232,16 @@ p{
 }
 .timeline-content h3{
   margin-top:0.3125rem;
-  color:rgb(81, 133, 135);
-  font-weight: 900;
+  color:rgb(108, 28, 61);
+  font-weight: 800;
 }
 /* ************************PORTFOLIO************************************** */
 .portfolio-wrapper {
-  background: lightgrey;
   padding: 3rem 0;
+  height: 50vh;
 }
 .portfolio-wrapper h1 {
-  color:#c5796d;
+  color:rgb(108, 28, 61);
 }
 .portfolio-image{
   width:25rem;
@@ -264,7 +276,7 @@ p{
   font-size: 1.5rem;
 }
 .portfolio-image-box:hover .portfolio-icon{
-  opacity: 70%;
+  opacity: 80%;
   transition: 0.3s ease-in-out;
   cursor: pointer;
 }
@@ -293,4 +305,50 @@ p{
   .portfolio-image-popupbox{
     width: 70%;
   }
+}
+
+
+
+@media(max-height:280px){
+  .popupbox-wrapper{
+    height: 90%;
+  }
+  .portfolio-image-popupbox{
+    width: 40%;
+  }
+}
+/* **************************CONTACT************************************ */
+
+.contact-wrapper{
+  height: 50vh;
+}
+
+.contact-header{
+  color: rgb(108, 28, 61);
+}
+.address-icon{
+  /* position:absolute;
+  opacity: 0; */
+  /* margin-left: -13rem;
+  margin-top: 4.6rem; */
+ 
+  color: #d1867b;
+  font-size: 2.5rem;
+}
+.phone-icon{
+  /* position:absolute;
+  opacity: 0; */
+  /* margin-left: -13rem;
+  margin-top: 4.6rem; */
+  color: #d1867b;
+  font-size: 2.5rem;
+}
+.email-icon{
+
+  
+  /* opacity: 0; */
+  /* margin-left: -13rem;
+  margin-top: 4.6rem; */
+  color: #d1867b;
+  font-size: 2.5rem;
 }
