@@ -4,9 +4,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Particles from 'react-particles-js';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
-import AboutMe from './components/AboutMe';
-import Experience from './components/Experience';
-import Portfolio from './components/Portfolio';
+// import AboutMe from './components/AboutMe';
+// import Experience from './components/Experience';
+import Projects from './components/Projects';
 import ContactMe from './components/ContactMe';
 
 function App() {
@@ -35,9 +35,7 @@ function App() {
     />
       <Navbar/>
       <Header/>
-      <AboutMe/>
-      <Experience/>
-      <Portfolio/>
+      <Projects/>
       <ContactMe/>
     </>
   );

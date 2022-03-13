@@ -6,9 +6,11 @@ import {faMailchimp} from '@fortawesome/free-brands-svg-icons';
 import { Size } from 'tsparticles/Options/Classes/Particles/Size/Size';
 // import {faAt} from '@fortawesome/free-solid-svg-icons';
 
+
 const ContactMe = () => {
     return (
         <div id="contact" className="contact-wrapper">
+             
             <div  className="container">
                 <h1 className="contact-header text-uppercase text-center py-5">contact</h1>
                 <div className="row text-center mb-5">
