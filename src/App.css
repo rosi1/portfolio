@@ -198,7 +198,6 @@ p{
 }
 .portfolio-wrapper {
   padding: 3rem 0;
-  /* height: 100vh; */
 }
 .portfolio-wrapper h1 {
   color: rgb(108, 28, 61);
@@ -258,10 +257,10 @@ p{
 /* **************************CONTACT************************************ */
 
 .contact-wrapper {
-  height: 90vh;
-  background: url(Jaipur1.jpg) no-repeat;
+  /* height: 90vh; */
+  background: url(Jaipur.jpg);
   background-size: cover;
-  /* background-position: center; */
+  height: 100vh;
 }
 
 .contact-header {
@@ -271,11 +270,6 @@ p{
 .address-icon,
 .phone-icon,
 .email-icon {
-  /* position:absolute;
-  opacity: 0; */
-  /* margin-left: -13rem;
-  margin-top: 4.6rem; */
-
   color: #d1867b;
   font-size: 2.5rem;
 }
