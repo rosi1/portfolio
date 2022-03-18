@@ -3,6 +3,7 @@
 body {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: bolder;
+  overflow-x: hidden;
 }
 
 .logo {
@@ -190,28 +191,29 @@ p{
   color:rgb(108, 28, 61);
   font-weight: 800;
 }  */
-/* ************************PORTFOLIO************************************** */
+/* ************************PROJECTS************************************** */
 .image-box-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 .portfolio-wrapper {
   padding: 3rem 0;
-  height: 100vh;
+  /* height: 100vh; */
 }
 .portfolio-wrapper h1 {
   color: rgb(108, 28, 61);
   margin-bottom: 10%;
+}
+.portfolio-image-box {
+  position: relative;
+  margin: 1rem;
 }
 .portfolio-image {
   width: 25rem;
   border: 1px solid #c5796d;
   padding: 0.5rem;
 }
-.portfolio-image-box {
-  position: relative;
-  margin: 1rem;
-}
+
 /* ************************overflow************************************** */
 .overflow {
   position: absolute;
@@ -257,9 +259,9 @@ p{
 
 .contact-wrapper {
   height: 90vh;
-  background: url(Jaipur2.jpg) no-repeat;
+  background: url(Jaipur1.jpg) no-repeat;
   background-size: cover;
-  background-position: center;
+  /* background-position: center; */
 }
 
 .contact-header {
@@ -279,6 +281,35 @@ p{
 }
 
 /***************************/
+
+@media (max-width: 1366px) {
+  .image-box-wrapper {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    overflow: hidden;
+  }
+  .portfolio-image {
+    width: 20rem;
+  }
+  .overflow {
+    position: absolute;
+    opacity: 0;
+    background: #282c34;
+    width: 20rem;
+    height: 10.6rem;
+    top: 0;
+    border: 1px solid #c5796d;
+    cursor: pointer;
+  }
+  .portfolio-icon {
+    position: absolute;
+    opacity: 0;
+    margin-left: -11rem;
+    margin-top: 4.6rem;
+    color: #d1867b;
+    font-size: 1.5rem;
+  }
+}
 @media (max-width: 768px) {
   .image-box-wrapper {
     display: flex;
@@ -289,16 +320,24 @@ p{
     width: 100%;
   }
   .portfolio-image {
-    width: 15rem;
+    width: 13rem;
   }
   .overflow {
     position: absolute;
     opacity: 0;
     background: #282c34;
-    width: 20rem;
-    height: 10.5rem;
+    width: 13rem;
+    height: 7rem;
     top: 0;
     border: 1px solid #c5796d;
     cursor: pointer;
+  }
+  .portfolio-icon {
+    position: absolute;
+    opacity: 0;
+    margin-left: -7rem;
+    margin-top: 2.6rem;
+    color: #d1867b;
+    font-size: 1.5rem;
   }
 }

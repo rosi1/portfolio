@@ -3,8 +3,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faMapMarkerAlt} from '@fortawesome/free-solid-svg-icons';
 import {faMobile} from '@fortawesome/free-solid-svg-icons';
 import {faMailchimp} from '@fortawesome/free-brands-svg-icons';
-import { Size } from 'tsparticles/Options/Classes/Particles/Size/Size';
-// import {faAt} from '@fortawesome/free-solid-svg-icons';
+import paw from '../paw.png';
 
 
 const ContactMe = () => {
@@ -28,8 +27,11 @@ const ContactMe = () => {
                     <div className="col-lg-4 col-xs-12">
                     <FontAwesomeIcon className="phone-icon mb-4" icon={faMobile}/>
                     <h6 style={{fontSize:"20px", fontWeight:"bold"}}>050-3321654</h6>
-                    </div>
                     
+                    </div>
+                    <div className="col-lg-12 col-xs-12">
+                   <img src={paw} alt="paw"/>
+                   </div>
                 </div>
             </div>
         </div>

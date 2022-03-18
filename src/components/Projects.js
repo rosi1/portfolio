@@ -69,7 +69,7 @@ const Project = () => {
     return (
         <div id="portfolio" className="portfolio-wrapper">
             <div className="container">
-                <h1 className="text-uppercase text-center py-5">Projects</h1>
+                <h1 className="text-uppercase text-center py-1">Projects</h1>
                 <div className="image-box-wrapper">
                     
                     <div className="portfolio-image-box" onClick={openPopupboxYummy}>
