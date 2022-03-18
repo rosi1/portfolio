@@ -17,7 +17,7 @@ const ContactMe = () => {
                     
                     <div className="col-lg-4 col-xs-12 ">
                     <FontAwesomeIcon className="address-icon mb-4" icon={faMapMarkerAlt}/>
-                    <h6 style={{fontSize:"20px", fontWeight:"bold"}}>shderot jerusalem 171 street,<br />jaffa</h6>
+                    <h6 style={{fontSize:"20px", fontWeight:"bold"}}>Tel Aviv - Yaffo</h6>
                     </div>
                     
                     <div className="col-lg-4 col-xs-12 ">
